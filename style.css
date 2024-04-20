@@ -1,0 +1,100 @@
+body{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+main{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 55rem;
+    background-color: #cccccc;
+    height: 100vh;
+}
+main h1{
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+    font-size: large;
+    align-items: center;
+}
+.hint{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 20px;
+    align-items: center;
+}
+.hint b{
+    font-weight: 900;
+}
+.grid-container{
+    display: grid;
+    grid-row-gap: 7rem;
+    grid-column-gap: 1rem;
+    grid-template-columns: repeat(4, 13rem);
+    grid-template-rows: repeat(4, 1rem);
+    text-align: center;
+    margin-top: 2rem;
+    width: 100%;
+}
+.grid-item{
+    height: 7rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.grid-container > div:nth-child(1){
+    display: grid;
+    background-color: #8b740c;
+    grid-column: span 2;
+    grid-row: auto;
+}
+.grid-container > div:nth-child(2){
+    display: grid;
+    background-color: #ffd653;
+    grid-row: auto;
+    grid-column: auto;
+}
+.grid-container > div:nth-child(3){
+    display: grid;
+    background-color: #ffd653;
+    grid-row: auto;
+    grid-column: auto;
+}
+.grid-container > div:nth-child(4){
+    display: grid;
+    background-color: #005780;
+    grid-column: span 3;
+    grid-row: auto;
+}
+.grid-container > div:nth-child(5){
+    display: grid;
+    background-color: #ffd653;
+    grid-column: span 1;
+    grid-row: auto;
+}
+.grid-container > div:nth-child(6){
+    display: grid;
+    background-color: #800080;
+    grid-column: span 4;
+    grid-row: auto;
+}
+.grid-container > div:nth-child(7){
+    display: grid;
+    background-color: #ffd653;
+    grid-column: span 1;
+    grid-row: auto;
+}
+.grid-container > div:nth-child(8){
+    display: grid;
+    background-color: #ffd653;
+    grid-column: span 1;
+    grid-row: auto;
+}
+.grid-container > div:nth-child(9){
+    display: grid;
+    background-color: #76afb9;
+    grid-column: span 2;
+    grid-row: auto;
+}
